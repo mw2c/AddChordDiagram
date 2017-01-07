@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Demo</title>
+<link type="text/css" rel="stylesheet" href="css/jtab-helper.css"/>
+<link href="css/jquery.qtip.min.css" rel="stylesheet">
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/raphael.js" type="text/javascript"></script>
+<script src="javascripts/jtab.js" type="text/javascript"></script>
+<script src="javascripts/jquery.qtip.min.js"></script>
+</head>
+<body>
+<div class="title">
+    <h1>Demo</h1>
+    <p>This demo shows how to render a guitar chords tab div into chords with highlights and diagrams.</p>
+</div>
+<div class="container">
+    <h3 style="text-align:center;">Nirvana - Pennyroyal Tea</h3>
+    <div class="text">
+(If you want to play the unplugged version just
+skip the solo)
+At the end of the G    Kurt would play:
+
+e|-------|
+B|-------|
+G|-------|
+D|-------|
+A|-------|
+E|-2-3-0-|
+
+[Chords]
+
+Am   x0221x
+G    320001
+C    3355xx (or played open)
+D    5577xx (or played open)
+A#   1133xx
+
+
+[Verse 1]
+
+Am              G
+Im on, my time, with everyone.
+Am            G
+I have, very, bad posture.
+
+
+[Chorus]
+
+C       D                A#
+Sit and drink Pennyroyal Tea
+C           D                     A#
+Distill the life that's inside of me
+C       D                A#
+Sit and drink Pennyroyal Tea
+C      D        A#
+I'm anemic royalty
+
+
+[Verse 2]
+
+Am                      G
+Give me a Leonard Cohen afterworld
+Am            G
+So I can sigh eternally
+
+
+[Chorus]
+
+C      D             A#
+I'm so tired I can't sleep
+C     D          A#
+I'm a liar and a thief
+C       D                A#
+Sit and drink pennyroyal Tea
+C      D        A#
+I'm anemic royalty
+
+
+[Solo]
+
+e|-------------------------------------3--3-2-0-----------|
+B|----------------------------------------------3-2-0-----|
+G|-2-2-2h3p2-2h3p2-2-2-2h3p2-2h3p2-2-2----------------2-0-|
+D|-2-2-------------2-2-------------2-2--------------------|
+A|-0-0-------------0-0-------------0-0--------------------|
+E|--------------------------------------------------------|
+
+
+[Verse 3]
+
+Am                   G
+I'm on warm milk and laxatives
+Am              G
+Cherry-flavored antacids
+
+
+[Chorus]
+
+C       D                A#
+Sit and drink Pennyroyal Tea
+C           D                     A#
+Distill the life that's inside of me
+C       D                A#
+Sit and drink Pennyroyal Tea
+C      D        A#
+I'm anemic royalty
+
+
+The ending is the Am over and over...
+
+
+**********************
+
+h - Hammer on
+p - Pull off
+
+**********************
+
+A     (X 0 2 2 2 0)
+Asus4 (0 0 2 2 3 0)
+A/F#  (2 X 0 2 2 0)
+E6    (0 2 2 1 2 0)
+Dsus2 (X X 0 2 3 0)
+Bm11  (X 2 0 2 3 0) also called Dsus2/B
+Amaj7 (X 0 2 1 2 0)
+
+
+            [Verse 1]
+
+            A                    Asus4  A/F#
+            Her green plastic watering can
+            A/F#                     E6    Dsus2
+             For her fake chinese rubber plant
+                          A    Dsus2
+            In the fake plastic earth
+            A                      Asus4  A/F#
+             That she bought from a rubber man
+            A/F#                  E6     Dsus2
+             In a town full of rubber plans
+                    A       Dsus2
+            To get rid of itself
+
+
+            [Chorus 1]
+
+                         Bm11               A
+            It wears her out   It wears her out
+                         Bm11               A
+            It wears her out   It wears her out
+
+
+            [Verse 2]
+
+            A                 Asus4    A/F#
+            She lives with a broken man
+            A/F#           E6        Dsus2
+             A cracked polystyrene  man
+                       A         Dsus2
+            Who just crumbles and burns
+            A               Asus4  A/F#
+             He used to do sur  -  gery
+            A/F#               E6       Dsus2
+             For girls in the eight  -  ies
+                         A    Dsus2
+            But gravity always wins
+
+
+            [Chorus 2]
+
+                             Bm11              A
+            And it wears him out  It wears him out
+                             Bm11       A
+            And it wears him out  It we-ear  -  err  -  ers
+
+
+            [Verse 3]
+
+                A              Asus4  A/F#
+            She looks like the real thing
+            A/F#                   E6    Dsus2
+             She tastes like the real thing
+                      A    Dsus2
+            My fake plastic love
+            A                  Asus4  A/F#
+             But I can't help the feeling
+            A/F#                        E6     Dsus2
+             I could blow through the ceil  -  ing
+                        A      Dsus2
+            If I just turn and run
+
+
+            [Chorus 3]
+
+                            Bm11              A
+            And it wears me out   It wears me out
+                        Bm11                 A Amaj7
+            It wears me out   It wear - err - ers me out
+
+
+            [Outro]
+
+                            Bm11
+            And if I could be who you wanted
+                        A
+            If I could be who you wanted
+              Bm11            A
+            All the time    All the time
+
+            mmmm mmmm mmmm
+
+            Bm11     A    Bm11     A (1 strum finish)
+</div>
+</div>
+<div id="diagram" style="visibility:hidden;width:0;height:0;overflow:hidden;"></div>
+<style type="text/css">
+body{
+    background: #FFF;
+}
+h3{
+    padding-top: 40px;
+}
+.title{
+    text-align: center;
+    width: 60%;
+    positon:relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    margin:0 auto;
+}
+.container{
+    background: #fff;
+    width: 60%;
+    positon:relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin:0 auto;
+    border-radius: 2px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.text{
+    font: 12px Courier New,Courier,monospace;
+    white-space: pre;
+    text-align: start;
+    word-break: break-all;
+    font-family: monospace;
+    line-height: 1.4;
+    color: #333;
+    display:inline;
+}
+.chord{
+    font: 12px Courier New,Courier,monospace;
+    font-family: monospace;
+    line-height: 1.4;
+    color: #4078c0;
+    display:inline;
+}
+</style>
+<script type='text/javascript'>
+$(document).ready(function(){
+    var txt = $(".text:first").html();
+    txt = txt.replace(/[A-G](b|#)?((m(aj)?|M|aug|dim|sus)?([2-7]|9|13)?)?(\/[A-G](b|#)?)?[\s\n\r]/g, function(name){
+        return '<div class="chord">' + name + '</div>';
+    }, false);
+    $(".text:first").html(txt);
+    $('.chord').each(function() {
+        $(this).qtip({
+            content: {
+                text: function(event, api) {
+                    jtab.render($("#diagram"), $(this).text().trim());
+                    return $("#diagram").html();
+                }
+            },
+            style: 'qtip-light',
+            position: {
+    			my: 'bottom center',
+    			at: 'top center'
+    		}
+        });
+    });
+});
+</script>
+</body>
+</html>
